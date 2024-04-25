@@ -1,3 +1,11 @@
+html { 
+  background: url(jazz_design.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -8,7 +16,7 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   display: flex;
   justify-content: center;
   align-items: center;
