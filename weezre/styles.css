@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #189BCC; /* Blue Album color */
+    padding-bottom: 80px; /* Add padding to the top to prevent content from overlapping the header */
+}
+
+
+header {
+    background-image: url('weezer.gif'); /* Add the path to your image */
+    background-position: center; /* Center the background image */
+    color: #0D0D0D;
+    padding: 60px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Add glow effect to tabs */
+nav ul li a.glow:hover {
+    text-shadow: 0px 0px 10px #fff; /* Change color and spread of shadow to customize glow */
+}
+
+/* Additional styling to separate username and comment input boxes */
+#comment-form input[type="text"],
+#comment-form textarea {
+    margin-bottom: 10px; /* Add space between input boxes */
+}
+/* Add a box around the comments */
+#comment-section {
+    border: 2px solid #000; /* Black border */
+    padding: 10px; /* Add padding inside the border */
+    border-radius: 5px; /* Rounded corners for the border */
+    margin-top: 20px; /* Add margin at the top to separate it from the comment form */
+}
+
+.comment {
+    margin-bottom: 10px; /* Add margin between comments */
+    position: relative; /* Enable positioning */
+}
+
+.timestamp {
+    font-size: 12px; /* Adjust font size */
+    color: #888; /* Gray color */
+    position: absolute; /* Position the timestamp relative to its parent */
+    right: 0; /* Align the timestamp to the right */
+    top: 0; /* Align the timestamp to the top */
+}
+
