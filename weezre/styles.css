@@ -37,6 +37,8 @@ section {
     background-color: #fff; /* White background for sections */
     border-radius: 10px; /* Rounded corners for sections */
     margin-bottom: 20px; /* Spacing between sections */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer {
@@ -78,4 +80,60 @@ nav ul li a.glow:hover {
     right: 0; /* Align the timestamp to the right */
     top: 0; /* Align the timestamp to the top */
 }
+#custom-music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
 
+#music-info {
+    display: flex;
+    align-items: center;
+}
+
+#music-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+#controls {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+#play-pause-button {
+    margin-right: 10px; /* Add margin to the right of the play/pause button */
+}
+#controls button {
+    background-color: #ffffff;
+    color: #464242;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background-color: rgb(221, 221, 221);
+}
+#progress-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+    height: 10px;
+    background-color: #555;
+    position: relative;
+    cursor: pointer;
+}
+
+#progress {
+    height: 100%;
+    background-color: #fff;
+    width: 0;
+}

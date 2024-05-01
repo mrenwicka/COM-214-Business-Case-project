@@ -25,7 +25,7 @@
     <section id="youtube-video">
         <h2>Watch Weezer!!!! XP</h2>
         <!-- Embed the YouTube video here -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UOOMpw-h8aw" frameborder="1" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/UOOMpw-h8aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
     </section>
     <section id="albums">
         <h2>Album Downloads XD</h2>
@@ -47,37 +47,48 @@
     </section>
     <section id="comments">
         <h2>Comments ^_^</h2>
-        <div id="comment-form">
+        <form id="comment-form">
             <input type="text" id="username" placeholder="Enter your username">
-            <br> <!-- Added line break to create space between username and comment -->
+            <br /> <!-- Added slash for self-closing -->
             <textarea id="comment-text" placeholder="Enter your comment"></textarea>
-            <button onclick="submitComment()">Submit</button>
-        </div>
+            <button type="button" onclick="submitComment()">Submit</button> <!-- Changed to type="button" to prevent form submission -->
+        </form>
         
         <div id="comment-section">
             <!-- Comments will be displayed here -->
         </div>
     </section>
-        <h2>Social Media Links</h2>
-        <div class="social-media-buttons">
-            <a href="https://www.weezerpedia.com/wiki/Index.php" class="social-media-button" target="_blank">
-                <img src="weezerpedia.jpeg" alt="Weezerpedia" width="30" height="30">
-            </a>
-            <a href="https://twitter.com/weezer" class="social-media-button" target="_blank">
-                <img src="twitter.png" alt="Twitter" width="30" height="30">
-            </a>
-            <a href="https://www.facebook.com/weezer" class="social-media-button" target="_blank">
-                <img src="facebook.png" alt="Facebook" width="30" height="30">
-            </a>
-            <a href="http://instagram.com/weezer" class="social-media-button" target="_blank">
-                <img src="instagram.png" alt="Instagram" width="30" height="30">
-            </a>
-            <a href="https://www.youtube.com/weezer" class="social-media-button" target="_blank">
-                <img src="youtube.png" alt="YouTube" width="30" height="30">
-            </a>
+    <h2>Social Media Links</h2>
+    <div class="social-media-buttons">
+        <a href="https://www.weezerpedia.com/wiki/Index.php" class="social-media-button" target="_blank">
+            <img src="weezerpedia.jpeg" alt="Weezerpedia" width="30" height="30">
+        </a>
+        <a href="https://twitter.com/weezer" class="social-media-button" target="_blank">
+            <img src="twitter.png" alt="Twitter" width="30" height="30">
+        </a>
+        <a href="https://www.facebook.com/weezer" class="social-media-button" target="_blank">
+            <img src="facebook.png" alt="Facebook" width="30" height="30">
+        </a>
+        <a href="http://instagram.com/weezer" class="social-media-button" target="_blank">
+            <img src="instagram.png" alt="Instagram" width="30" height="30">
+        </a>
+        <a href="https://www.youtube.com/weezer" class="social-media-button" target="_blank">
+            <img src="youtube.png" alt="YouTube" width="30" height="30">
+        </a>
+    </div>
+    <div id="custom-music-player">
+        <div id="music-info">
+            <img id="cover-image" src="" alt="Cover Image">
+            <div id="song-title"></div>
         </div>
-    
-    
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="controls">
+            <button id="play-pause-button">Play</button>
+            <button id="skip-button">Skip</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
