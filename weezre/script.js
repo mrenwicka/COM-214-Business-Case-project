@@ -26,11 +26,11 @@
     }
     window.onload = function() {
         const songs = [
-            { title: "Beverly Hills", src: "Beverly_Hills.mp3", cover: "beverly_hills_cover.jpeg" },
-            { title: "Only In Dreams", src: "Only_In_Dreams.mp3", cover: "blue_album_cover.jpeg" },
-            { title: "Say It Ain't So", src: "Say_It_Ain't_So.mp3", cover: "blue_album_cover.jpeg" },
-            { title: "Thank God for Girls", src: "Thank_God_for_Girls.mp3", cover: "Thank_God_for_Girls_Cover.jpeg" },
-            { title: "Undone - The Sweater Song", src: "Undone-The_Sweater_Song.mp3", cover: "blue_album_cover.jpeg" }
+            { title: "Beverly Hills", src: "audio/Beverly_Hills.mp3", cover: "images/beverly_hills_cover.jpeg" },
+            { title: "Only In Dreams", src: "audio/Only_In_Dreams.mp3", cover: "images/blue_album_cover.jpeg" },
+            { title: "Say It Ain't So", src: "audio/Say_It_Ain't_So.mp3", cover: "images/blue_album_cover.jpeg" },
+            { title: "Thank God for Girls", src: "audio/Thank_God_for_Girls.mp3", cover: "images/Thank_God_for_Girls_Cover.jpeg" },
+            { title: "Undone - The Sweater Song", src: "audio/Undone-The_Sweater_Song.mp3", cover: "images/blue_album_cover.jpeg" }
         ];
     
         const audio = new Audio();
