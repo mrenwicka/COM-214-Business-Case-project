@@ -1,9 +1,30 @@
 html { 
-  background: url(jazz_design.jpeg) no-repeat center center fixed; 
+  background: url(images/jazz_design.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.spinner {
+  /* width: 1000px; */
+  /* height: 1000px; */
+  background-color: blue;
+  animation: spin 4s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg);
+    /* transform: rotateY(0deg); */
+    transform: rotateZ(0deg);
+  }
+  100% {
+      transform: rotateX(360deg);
+      /* transform: rotateY(360deg); */
+      transform: rotateZ(360deg);
+  }
 }
 
 .fuzzy-bubbles-regular {
@@ -40,7 +61,7 @@ body {
   max-width: 800px;
   margin: 50px auto;
   /* background-color: #ffffff; */
-  background-image: url("retro_bubbles.jpg");
+  background-image: url("images/retro_bubbles.jpg");
   background-position: center;
   background-size: cover;
   padding: 20px;
